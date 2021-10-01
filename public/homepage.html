@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/styles.css">
+  <title>Document</title>
+</head>
+<body>
+  
+  <main class="chat-main">
+    <header class="header header_chatPage">
+      <img src="icons/menu.png" class="icon icon_exit nav_toggler" onclick="collapsible()" alt="menu" srcset="">
+      <h1 title="Talks°">Talks°</h1>
+      <img class="icon icon_exit" src="icons/exit.png" alt="exit" title="exit" onclick="leaveRoom()" />
+    </header>
+    <div class="chat-sidebar" id="collapsible">
+      <h2>RoomName:</h2>
+      <h3 id="room-name"></h3>
+      <h2>Users:</h2>
+      <ul id="users">
+        <!--  -->
+      </ul>
+    </div>
+
+    <div class="chat-messages elementToHide" id="chat-message">
+      <!-- <div class="message">
+        <p class="meta">Mani <span>•9:12pm</span></p>
+        <p class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+          repudiandae.
+        </p>
+      </div> -->
+    </div>
+    
+    <div class="elementToHide chat-form">
+      <form id="chat-form">
+        <input
+          id="msg"
+          type="text"
+          placeholder="Enter Message"
+          required
+          autocomplete="off"
+        />
+        <img src="icons/send.png" class="icon icon_exit icon_send" alt="send" srcset="" onclick="readMsg()">
+      </form>
+    </div>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.1/qs.js" integrity="sha512-DkxSbrm2xe6jcerSwLA4vS8WV7UarP44UjrS+Yp2MRFE2md2qPLpZVTyoxHrM2mvZ2Ft2zhPUMplV20zNFXriQ==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

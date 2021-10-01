@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Talks°</title>
+</head>
+<body>
+  
+  <div class="header header_login">
+    <h1>Talks°</h1>
+    <p>It's free and will always be free</p>
+  </div>
+  <div class="login">
+    <h2>Login</h2>
+    <form name="login" class="login-form" action="homepage.html">
+      <input class="input1" id="userName" name="username" placeholder="User Name" type="text"  required>
+      <input class="input1" id="room" name="room" placeholder="Room Name" type="text"  required>
+      <button type="submit" class="btn" onclick="readData('joinroom')">Join</button>
+    </form>
+    <p class="or">or</p>
+    <button class="btn btn-buttom" onclick="redirect('createroom')">Create new Room</button>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
